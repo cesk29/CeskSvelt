@@ -1,20 +1,7 @@
 <script>
-	import welcomeFallback from '$lib/images/svelte-welcome.png';
-	import welcome from '$lib/images/svelte-welcome.webp';
 	import Counter from './Counter.svelte';
-	import Title from './Title.svelte';
-
-	let posts = [
-		{
-			id: 1,
-			title: 'Hello world!',
-		},
-		{
-			id: 2,
-			title: 'Hello svelte!',
-		}
-		
-	]
+	import welcome from '$lib/images/svelte-welcome.webp';
+	import welcomeFallback from '$lib/images/svelte-welcome.png';
 </script>
 
 <svelte:head>
@@ -23,9 +10,6 @@
 </svelte:head>
 
 <section>
-	{#each posts as post}
-		<Title post={post}></Title>
-	{/each}
 	<h1>
 		<span class="welcome">
 			<picture>
